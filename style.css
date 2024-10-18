@@ -225,3 +225,21 @@ body {
     width: 100%;
 
 }
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        padding: 10px; /* Reduce padding */
+    }
+    .home {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 0 5%; /* Reduce padding */
+    }
+    .home-project {
+        margin-right: 0; /* Remove right margin on small screens */
+        max-width: 100%; /* Use full width */
+    }
+    .home-content h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+    /* Additional styles for other elements */
+}
