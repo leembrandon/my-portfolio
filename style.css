@@ -235,79 +235,51 @@ body {
 }
 
 /* Mobile-Friendly Adjustments */
+/* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
-    .header {
-        padding: 15px 5%;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .navbar {
-        display: none; /* Hide navbar on small screens */
-        flex-direction: column;
-        background-color: #081b29;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        padding: 20px;
-    }
-
-    .navbar a {
-        font-size: 16px;
-        padding: 10px 0;
-        text-align: center;
-        margin: 0;
-        color: #00abf0;
-    }
-
-    .header .menu-toggle {
-        display: block; /* Show the menu toggle button */
-        font-size: 25px;
-        cursor: pointer;
-        color: #ededed;
-    }
-
-    /* Make home section content stack */
     .home {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: center;
-        padding: 10%;
+        flex-direction: column; /* Stack items vertically */
+        padding: 0 5%; /* Adjust padding for smaller screens */
+    }
+
+    .home-content {
+        max-width: 100%; /* Full width on mobile */
+        text-align: center; /* Center text on mobile */
     }
 
     .home-content h1 {
-        font-size: 36px;
+        font-size: 36px; /* Adjust font size */
     }
 
     .home-content h3 {
-        font-size: 24px;
+        font-size: 24px; /* Adjust font size */
     }
 
     .home-content p {
-        font-size: 14px;
+        font-size: 14px; /* Adjust font size */
+        margin: 15px 0; /* Adjust margin */
     }
 
     .home-content .btn-box {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        width: 100%; /* Full width */
     }
 
-    /* Responsive for projects */
+    .btn-box a {
+        width: 80%; /* Responsive width */
+        margin-bottom: 10px; /* Spacing between buttons */
+    }
+
     .home-project {
-        width: 100%;
-        padding: 15px;
-        margin: 20px 0;
+        max-width: 100%; /* Full width on mobile */
+        margin: 20px 0; /* Margin for spacing */
     }
 
     .home-sci {
-        width: 100px;
-        justify-content: center;
-        bottom: 20px;
+        position: relative; /* Change position to relative */
+        bottom: auto; /* Reset bottom position */
+        margin-top: 20px; /* Spacing from content */
+        justify-content: center; /* Center icons */
     }
 }
-
