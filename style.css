@@ -234,10 +234,6 @@ body {
 
 }
 
-.flex-container {
-    display: flex;
-}
-
 /* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
     .header {
