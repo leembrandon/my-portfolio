@@ -237,3 +237,81 @@ body {
 .flex-container {
     display: flex;
 }
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar {
+        display: none; /* Hide navbar on small screens */
+        flex-direction: column;
+        background-color: #081b29;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 10px 0;
+        text-align: center;
+        margin: 0;
+        color: #00abf0;
+    }
+
+    .header .menu-toggle {
+        display: block; /* Show the menu toggle button */
+        font-size: 25px;
+        cursor: pointer;
+        color: #ededed;
+    }
+
+    /* Make home section content stack */
+    .home {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        padding: 10%;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .home-content .btn-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    /* Responsive for projects */
+    .home-project {
+        width: 100%;
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    .home-sci {
+        width: 100px;
+        justify-content: center;
+        bottom: 20px;
+    }
+}
+
