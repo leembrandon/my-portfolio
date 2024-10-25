@@ -8,6 +8,7 @@ var typed = new Typed('#typed', {
   loop: true
 });
 
+
 const slides = document.querySelectorAll('.home-project-slide');
 let currentSlide = 0;
 
@@ -23,3 +24,8 @@ slides[currentSlide].classList.add('active');
 
 // Set interval to cycle through slides every 5 seconds
 setInterval(showNextSlide, 5000); // 5000 ms = 5 seconds
+
+
+document.querySelector('.menu-toggle').onclick = () => {
+document.querySelector('.navbar').classList.toggle('active');
+};
