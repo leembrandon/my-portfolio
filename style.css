@@ -282,4 +282,30 @@ body {
         margin-top: 20px; /* Spacing from content */
         justify-content: center; /* Center icons */
     }
+
+       .navbar {
+        display: none; /* Hide navbar on small screens */
+        flex-direction: column;
+        background-color: #081b29;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 10px 0;
+        text-align: center;
+        margin: 0;
+        color: #00abf0;
+    }
+
+    .header .menu-toggle {
+        display: block; /* Show the menu toggle button */
+        font-size: 25px;
+        cursor: pointer;
+        color: #ededed;
+    }
 }
