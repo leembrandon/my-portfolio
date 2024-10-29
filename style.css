@@ -239,16 +239,18 @@ body {
 @media (max-width: 768px) {
     .home {
         flex-direction: column; /* Stack items vertically */
-        padding: 0 5%; /* Adjust padding for smaller screens */
+        padding: 70px 5%; /* Adjust padding for smaller screens */
     }
 
     .home-content {
         max-width: 100%; /* Full width on mobile */
         text-align: center; /* Center text on mobile */
+        margin-top: 20px;
     }
 
     .home-content h1 {
         font-size: 36px; /* Adjust font size */
+        margin-top: 0;
     }
 
     .home-content h3 {
@@ -311,6 +313,7 @@ body {
 
        .header {
         padding: 15px 5%;
+         height: 60px;
     }
 
     .logo {
