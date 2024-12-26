@@ -20,18 +20,22 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
 }
 
+section, aside {
+    flex: 1 1 100%;
+}
+
 section {
-    float: left;
-    width: 70%;
+    flex: 3 1 60%;
 }
 
 aside {
-    float: right;
-    width: 25%;
+    flex: 1 1 35%;
 }
 
 footer {
@@ -92,7 +96,7 @@ footer {
 }
 
 .home-project h3 {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 10px;
     color: white;
 }
@@ -115,45 +119,4 @@ footer {
 
 
 
-
-
-.home-sci a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #00abf0;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #00abf0;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.home-sci a:hover {
-    color: #081b29;
-}
-
-.home-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #00abf0;
-    z-index: -1;
-    transition: .5s;
-
-}
-
-.home-sci a:hover::before {
-    width: 100%;
-
-}
 
